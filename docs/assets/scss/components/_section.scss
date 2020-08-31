@@ -25,11 +25,12 @@
   padding-top: 0;
   display: flex;
   justify-content: flex-end;
+  position: relative;
   .intro-img {
     position: relative;
     width: 100%;
     height: 630px;
-    background-image: url(../img/greyroom.jpg);
+    background-image: url(../docs/assets/img/greyroom.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60% 50%;
@@ -45,7 +46,6 @@
       @media (min-width: 1200px) {
         align-items: flex-start;
         margin-left: -23%;
-        // transform: ;
       }
     }
 
@@ -69,8 +69,42 @@
       }
     }
     }
+    
   }
 
+  .intro-contacts {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    font-weight: 600;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    display: flex;
+    background: $global-warning-background;
+    span {
+      color: #fff;
+      margin-right: 10px;
+    }
+    @media (min-width: $breakpoint-xsmall) {
+      justify-content: flex-end;
+      div {
+        margin-left: 50px;
+      }
+    }
+    @media (min-width: $breakpoint-medium) {
+      height: 80px;
+      width: 590px;
+      font-size: $global-medium-font-size;
+      letter-spacing: -0.45px;
+      justify-content: space-around;
+      div {
+        margin-left: 0;
+      }
+    }
+  }
 
 // .hero-contacts {
   //   position: absolute;

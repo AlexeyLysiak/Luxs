@@ -857,6 +857,7 @@ h6 {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
 }
 
 .section-intro .intro-img {
@@ -918,6 +919,56 @@ h6 {
     max-width: 600px;
     text-align: left;
     margin-bottom: 40px;
+  }
+}
+
+.intro-contacts {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  font-weight: 600;
+  height: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffcc01;
+}
+
+.intro-contacts span {
+  color: #fff;
+  margin-right: 10px;
+}
+
+@media (min-width: 480px) {
+  .intro-contacts {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .intro-contacts div {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 960px) {
+  .intro-contacts {
+    height: 80px;
+    width: 590px;
+    font-size: 18px;
+    letter-spacing: -0.45px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .intro-contacts div {
+    margin-left: 0;
   }
 }
 
