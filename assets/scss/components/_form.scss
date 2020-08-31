@@ -1,0 +1,108 @@
+.form-apartments {
+  input[type=text] {
+    width: 100%;
+    font-size: $global-small-font-size;
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 45px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    
+    @media (min-width: $breakpoint-xsmall) {
+      width: 300px;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    @media(min-width: $breakpoint-small) {
+      height: 70px;
+      width: 365px;
+      padding-left: 45px;
+      padding-right: 10px;
+    }
+  }
+  .input-container {
+    display: block;
+    position: relative;
+    @media (min-width: $breakpoint-xsmall) {
+      display: inline-block;
+    }
+  }
+  .input-container i{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-7px);
+    font-size: 14px;
+    color: #919eb1;
+  }
+  
+
+  button[type=submit] {
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    font-size: $global-small-font-size;
+    font-weight: 600;
+    background: $global-warning-background;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: all .3s linear;
+    cursor: pointer;
+    &:hover { 
+      background: darken($global-warning-background, 3%);
+    }
+    @media (min-width: $breakpoint-xsmall) {
+      height: 40px;
+      width: 115px;
+      margin: 0;
+      margin-left: -4px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+    @media(min-width: $breakpoint-small) {
+      height: 70px;
+    }
+  }
+}
+
+.footer-form {
+  @media (min-width: $breakpoint-medium) {
+    width: 480px;
+  }
+  input[type=text] {
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 35px;
+    font-size: $global-font-size;
+    color: #919eb1;
+    padding: 0 10px;
+    @media (min-width: $breakpoint-medium) {
+      width: 80%;
+      height: 70px;
+      font-size: $global-small-font-size;
+    }
+  }
+
+  button {
+    width: 20%;
+    margin-left: -4px;
+    border: none;
+    outline: none;
+    height: 35px;
+    background: #fff;
+    transition: all .3s linear;
+    cursor: pointer;
+    &:hover {
+      background: $global-warning-background;
+      color: #fff;
+    }
+    @media (min-width: $breakpoint-medium) {
+      width: 20%;
+      height: 70px;
+      font-size: $global-small-font-size;
+    }
+  }
+}

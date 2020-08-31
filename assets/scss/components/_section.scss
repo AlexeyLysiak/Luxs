@@ -1,0 +1,294 @@
+.section {
+  padding: 40px 0;
+  @media (min-width: $breakpoint-medium) {
+    padding: 80px 0;
+  }
+
+  &-title {
+    font-size: $global-xxlarge-font-size;
+    line-height: 50px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    max-width: 450px;
+  }
+
+  &-description {
+    margin-top: 0;
+    @media (min-width: $breakpoint-small) {
+      max-width: 365px;  
+    }
+  }
+}
+
+.section-hero {
+  padding-top: 0;
+  min-height: 630px;
+
+  .background {
+    background-image: url(../img/greyroom.jpg);
+    
+  }
+
+  // .hero-contacts {
+  //   position: absolute;
+  //   width: 100%;
+  //   bottom: 0;
+  //   height: 50px;
+  //   right: 0;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   background: $global-warning-background;
+  //   padding: 0 10px;
+  //   p {
+  //     margin: 0;
+  //     font-weight: 600;
+  //     @media (min-width: $breakpoint-xsmall){
+  //       font-size: $global-medium-font-size;
+  //     }
+  //     span {
+  //       color: #fff;
+  //       margin-right: 5px;
+  //     }
+    // }
+  // }
+
+}
+
+.section-about {
+  .about-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    @media (min-width: $breakpoint-xsmall) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+
+.main-description {
+  @media (min-width: $breakpoint-small) {
+      width: 100%;
+  }
+}
+
+  @media (min-width: $breakpoint-medium) {
+    .section-title {
+      margin-bottom: 70px;
+    }
+    .main-description {
+      max-width: 540px;
+    }
+    .about-cards {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.section-apartments {
+  background: $global-primary-background;
+  .section-title {
+    @media (min-width: $breakpoint-small) {
+      margin-bottom: 80px;
+    }
+  }
+  .apartments-cards {
+    margin-bottom: 30px;
+    @media (min-width: $breakpoint-small) {
+      margin-bottom: 60px;
+    }
+  }
+
+  .search-apatments-block {
+    @media (min-width: $breakpoint-medium) {
+      display: flex;
+    }
+  }
+
+  .all-apartments-btn {
+    font-size: $global-small-font-size;
+    background: #fff;
+    color: $global-color;
+    margin-top: 15px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    transition: all .3s linear;
+    outline: none;
+    cursor: pointer;
+    display: block;
+
+    &:hover {
+      background: $global-warning-background;
+    }
+    @media (min-width: $breakpoint-xsmall) {
+      width: 300px;
+    }
+    @media (min-width: $breakpoint-small) {
+      width: 250px;
+      height: 70px;
+    }
+    @media (min-width: $breakpoint-medium) {
+      margin-top: 0;
+      margin-left: 40px;
+    }
+  }
+}
+
+.section-works { 
+  .section-description { 
+    margin-top: 0;
+    margin-bottom: 35px;
+
+    @media (min-width: $breakpoint-small) {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.section-services { 
+  @media (min-width: $breakpoint-medium) {
+    padding-top: 20px;
+  }
+  .section-description { 
+    margin-bottom: 60px;
+  }
+
+  .service-name { 
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: $global-large-font-size;
+    font-weight: 600;
+    letter-spacing: -0.63px;
+  }
+  .services-descriptions {
+    @media (min-width: $breakpoint-large) {
+      padding-left: 100px;
+    }
+  }
+
+  .service-description { 
+    margin: 0;
+    margin-bottom: 43px;
+  }
+  .services-img { 
+    max-width: 651px;
+    margin: 0 auto;
+    @media (min-width: $breakpoint-large) {
+      margin-left: -100px;
+    }
+  }
+}
+
+.section-agents { 
+  background: $global-primary-background;
+  .section-description {
+    margin-bottom: 60px;
+  }
+}
+
+.section-superadd {
+
+  .superadd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:not(:last-of-type) {
+      @media(min-width: $breakpoint-small) {
+        margin-bottom: 50px;
+      }
+    }
+    &-reverse {
+      flex-direction: column-reverse;
+    }
+    @media (min-width: $breakpoint-medium) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  .section-img {
+    position: relative;
+    .location {
+      font-size: $global-medium-font-size;
+      font-weight: 600;
+      background: $global-warning-background;
+      position: absolute;
+      bottom: -10%;
+      left: 10%;
+      width: 230px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        margin-right: 20px;
+        font-size: 22px;
+        color: #fff;
+      }
+      @media (min-width: $breakpoint-xsmall) {
+        left: 30%; 
+      }
+      @media (min-width: $breakpoint-small) {
+        width: 335px;
+        height: 80px;
+      }
+    }  
+    @media (min-width: $breakpoint-xsmall) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .section-info {
+    @media (min-width: 960px) {
+      margin-top: 40px;
+      margin-left: 40px;
+    } 
+    &_title {
+      font-size: $global-large-font-size;
+      font-weight: 600;
+      letter-spacing: -0.63px;
+    }
+  
+    &_desc {
+      max-width: 450px;
+      text-align: justify;
+    }
+  }
+
+  .superadd-reverse {
+   
+    @media (min-width: $breakpoint-large) {
+      .location {
+        left: 50%
+      }
+    }
+  }
+  
+
+  .btn-show {
+    width: 100%;
+    background: $global-secondary-background;
+    font-size: $global-medium-font-size;
+    font-weight: 600;
+    letter-spacing: -0.45px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    transition: all 0.2s linear;
+    @media (min-width: $breakpoint-small) {
+      width: 240px;
+      height: 80px;
+    }
+    &:hover {
+      color: $global-emphasis-color;
+      background: darken($global-secondary-background, 10%);
+    }
+  }
+}

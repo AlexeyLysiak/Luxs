@@ -1,0 +1,65 @@
+.columns-zero {
+  margin: 0;
+}
+.columns-zero > .column {
+  padding: 0;
+}
+
+.columns {
+  margin: -10px;
+}
+.columns > .column {
+  padding: 10px;
+}
+
+.columns-small {
+  margin: -15px;
+}
+.columns-small > .column {
+  padding: 15px;
+}
+
+.columns-medium {
+  margin: -30px;
+}
+.columns-medium > .column {
+  padding: 30px;
+}
+
+.columns-large {
+  margin: -15px;
+}
+.columns-large > .column {
+  padding: 15px;
+}
+
+@media (min-width: 480px) {
+  .columns { 
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 640px) { 
+  .columns-small { 
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards-steps {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 960px) { 
+  .columns {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services-list  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+

@@ -1,0 +1,222 @@
+.about-card {
+  background: $global-primary-background;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+
+  width: 200px;
+  height: 200px;
+  p {
+    margin: 0;
+  }
+
+  &_count {
+    font-size: $global-xxlarge-font-size;
+    font-weight: 600;
+    color: $global-emphasis-color;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+  }
+
+  &_desc {
+    font-size: $global-xsmall-font-size;
+    font-weight: 600;
+    letter-spacing: -0.35px;
+  }
+}
+
+.card-apartment {
+  background: #fff;
+  max-width: 350px;
+  max-height: 500px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    .price {
+      color: orange;
+    }
+  }
+
+  &_image { 
+    margin: 0;
+  }
+
+  &_desc {
+    padding: 26px 22px 36px;
+    .address {
+      font-size: $global-small-font-size;
+      line-height: $global-small-font-size;
+      font-weight: 600;
+      margin-bottom: 26px;
+    }
+
+    .price { 
+      font-size: $global-medium-font-size;
+      // font-size: 13px;
+      font-weight: 600;
+      color: $global-emphasis-color;
+      line-height: $global-medium-font-size;
+      margin: 0;
+    }
+    .convenience {
+      text-transform: uppercase;
+      margin: 0;
+      line-height: 13px;
+        span{
+          position: relative;
+          &:first-child{
+          margin-right: 25px;
+            @media(min-width: $breakpoint-small) {
+              margin-right: 40px;
+            }
+            &::before{
+              content: '';
+              position: absolute;
+              background-image: url('../img/shower.png');
+              background-repeat: no-repeat;
+              top: 2px;
+              left: -15px;
+              width: 50px;
+              height: 50px;
+            }
+          }
+          &:last-child{
+              &::before{
+                content: '';
+                position: absolute;
+                background-image: url('../img/bed.png');
+                background-repeat: no-repeat;
+                top: 2px;
+                left: -22px;
+                width: 50px;
+                height: 50px;
+              }
+            }
+        }
+      }
+    }
+  &_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.card-step {
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 345px;
+  max-height: 370px;
+  overflow: hidden;
+  margin: 0 auto;
+  transition: all .2s linear;
+
+  &:hover { 
+    background: $global-warning-background;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    .step-info::after { 
+      background: #fff;
+    }
+  }
+  .step-value { 
+    position: absolute;
+    top: -70px;
+    left: -40px;
+    font-size: 200px;
+    line-height: 200px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .card-description { 
+    margin-top: 145px;
+    margin-left: 70px;
+  }
+  .step-title { 
+    margin: 0;
+    font-size: $global-medium-font-size;
+    letter-spacing: -0.73px;
+    margin-bottom: 23px;
+    margin-left: -36px;
+    span { 
+      margin-right: 13px;
+    }
+  }
+  .step-description { 
+    margin: 0;
+    max-width: 210px;
+    margin-bottom: 14px;
+  }
+  .step-info { 
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    font-weight: 600;
+    margin-bottom: 55px;
+    &::after { 
+      content: '';
+      position: absolute;
+      // width: 90px;
+      height: 3px;
+      background: $global-secondary-background;
+      bottom: -3px;
+      left: 0;
+      right: 0; 
+    }
+  }
+  
+}
+
+.card-agent { 
+  max-width: 350px;
+  max-height: 480px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  position: relative;
+  margin: 0 auto;
+  transition: all .2s linear;
+  &:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  }
+
+  &_img { 
+    max-height: 380px;
+    margin: 0;
+  }
+  
+  &_desc { 
+    padding: 20px 22px 0px 22px;
+    .agent-position {
+      font-size: $global-small-font-size;  
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+  }
+
+  .agent-info {
+    display: flex;
+    justify-content: space-between;
+
+    .agent-name {
+      font-size: $global-small-font-size;  
+      font-weight: 600;
+      color: $global-emphasis-color;
+    }
+
+    .agent-social {
+      width: 80px;
+      display: flex;
+      justify-content: space-between;
+      font-size: $global-small-font-size;
+      a:hover {
+        transition: all .2s linear;
+        color: $global-emphasis-color;
+      }
+    }
+  }
+}
